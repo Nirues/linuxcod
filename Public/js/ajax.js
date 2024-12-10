@@ -576,13 +576,13 @@ $(document).ready(function () {
 
   /* -------------------------------------- Lọc giá --------------------------------------  */
 
-  $(".price__show").html("Từ: " + changedPrice(50000) + " - " + changedPrice(1000000));
+  $(".price__show").html("Từ: " + changedPrice(50000) + " - " + changedPrice(100000000));
 
   $("#priceRange").slider({
     range: true,
-    min: 50000,
-    max: 1000000,
-    values: [50000, 1000000],
+    min: 500000,
+    max: 100000000,
+    values: [50000, 100000000],
     step: 50000,
     stop: function (event, ui) {
       $(".price__show").html("Từ: " + changedPrice(ui.values[0]) + " - " + changedPrice(ui.values[1]));
@@ -1173,15 +1173,16 @@ $(document).ready(function () {
   $(".Order").click(function () {
     var methodPay = "";
 
-    methodPay = "Chuyển khoản ngân hàng";
-    title = "<p><i class='fa-solid fa-circle-exclamation'></i> Cảm ơn bạn đã mua hàng tại VIETSTALL. Bạn vui lòng chờ xác nhận đơn hàng qua email từ nhân viên Inbox/Order sau khi kiểm tra tình trạng còn hàng tại kho. Vui lòng <b>KHÔNG</b> chuyển khoản trước khi nhận được xác nhận từ VIEST. Xin cảm ơn!</p>";
-    inforBank = "<p>Sau khi nhân viên Inbox/Order xác nhận còn hàng, Bạn vui lòng chuyển khoản với nội dung (copy đúng nội dung này để VIEST kiểm tra nhanh cho bạn): <b>#255118 124124 xxxx xxxx</b>vào tài khoản ngân hàng sau:</p>" + "<div class='Infor__Bank'>" + "<b>THÔNG TIN TÀI KHOẢN NGÂN HÀNG CỦA CHÚNG TÔI</b>" + "<div class='Infor__Bank--Contain'>" + "<div>NGUYỄN THỊ LÂM VY</div>" + "<div> NGÂN HÀNG QUÂN ĐỘI MB BANK</div>" + "<div>Số tài khoản: <b>9007041261388</b></div>" + "</div>" + "</div>";
-
+    methodPay = "Bank transfer";
+    title = "<p><i class='fa-solid fa-circle-exclamation'></i> Thank you for shopping at Ecenler. Please wait for the order confirmation via email from our staff at Inbox/Order after checking the stock availability. Please <b>DO NOT</b> transfer money before receiving confirmation from Ecenler. Thank you!</p>";
+    inforBank = "<p>After our staff at Inbox/Order confirms the availability of stock, please transfer money with the content (copy exactly this content to help Ecenler verify quickly for you): <b>#255118 124124 xxxx xxxx</b> to the following bank account:</p>" + "<div class='Infor__Bank'>" + "<b>OUR BANK ACCOUNT INFORMATION</b>" + "<div class='Infor__Bank--Contain'>" + "<div>NGUYỄN QUỐC</div>" + "<div>MB BANK MILITARY BANK</div>" + "<div>Account number: <b>9007041261388</b></div>" + "</div>" + "</div>";
+    
     if ($("input[name=rdPaymentMethod]:checked").val() == "2") {
-      methodPay = "Trả tiền mặt khi nhận hàng (COD)";
-      title = "<p><i class='fa-solid fa-circle-exclamation'></i> Cảm ơn bạn. Đơn hàng của bạn đã được nhận.</p>";
-      inforBank = "<p>Trả tiền mặt khi giao hàng (COD)</p>";
+      methodPay = "Cash on delivery (COD)";
+      title = "<p><i class='fa-solid fa-circle-exclamation'></i> Thank you. Your order has been received.</p>";
+      inforBank = "<p>Cash on delivery (COD)</p>";
     }
+    
 
     var name = $(".nameCustomer").val();
     var address = $(".addressCustomer").val();
@@ -1200,13 +1201,13 @@ $(document).ready(function () {
         totalPrice = totalPrice + (item.tongTien - 0);
       });
 
-      var containPay = "<div class='tablePayed'>" + "<div class='Payed__col1'>" + "<img style='width: 250px; object-fit: cover' src='Public/image/qr.png' alt=''>" + "</div>" + "<div class='Payed__col2'>" + "<div class='Payed__col2--Row1'></div>" + "<div class='Payed__col2--Row2'>" + "<div class='Row2--Col Row2--Col1'>" + "<p>Mã số đơn hàng của bạn:</p>" + "<strong>" + arr[0].ID + "</strong>" + "</div>" + "<div class='Row2--Col Row2--Col2'>" + "<p>Tổng tiền thanh toán:</p>";
+      var containPay = "<div class='tablePayed'>" + "<div class='Payed__col1'>" + "<img style='width: 250px; object-fit: cover' src='Public/image/qr.png' alt=''>" + "</div>" + "<div class='Payed__col2'>" + "<div class='Payed__col2--Row1'></div>" + "<div class='Payed__col2--Row2'>" + "<div class='Row2--Col Row2--Col1'>" + "<p>Your order ID:</p>" + "<strong>" + arr[0].ID + "</strong>" + "</div>" + "<div class='Row2--Col Row2--Col2'>" + "<p>Total payment:</p>";
       if (total_Paypal > 0) {
         containPay += "<strong class='Detail-Bill__Paypal'>" + changedPrice(total_Paypal - 0) + "</strong>";
       } else {
         containPay += "<strong class='Detail-Bill__Paypal'>" + changedPrice(totalPrice + 29000) + "</strong>";
       }
-      containPay += "</div>" + "<div class='Row2--Col Row2--Col3'>" + "<p>Phương thức thanh toán:</p>" + "<strong>" + methodPay + "</strong>" + "</div>" + "</div>" + "<div class='Payed__col2--Row3'>" + "<span>Bạn có thể xem lại <a href='TheoDoiDonHang'>đơn hàng của tôi</a></span>" + "<p>Thông tin chi tiết về đơn hàng đã được gửi đến địa chỉ email <b>" + email + "</b>.<br>Nếu không tìm thấy vui lòng kiếm tra trong hộp thư <b>Spam</b> hoặc <b>Junk Folder</b></p>" + "</div>" + "<div class='Payed__col2--Row4'></div>" + "</div>" + "</div>";
+      containPay += "</div>" + "<div class='Row2--Col Row2--Col3'>" + "<p>Payment method:</p>" + "<strong>" + methodPay + "</strong>" + "</div>" + "</div>" + "<div class='Payed__col2--Row3'>" + "<span>You can review <a href='TheoDoiDonHang'>my order</a></span>" + "<p>Order details have been sent to the email address <b>" + email + "</b>.<br>If you can't find it, please check your <b>Spam</b> or <b>Junk Folder</b></p>" + "</div>" + "<div class='Payed__col2--Row4'></div>" + "</div>" + "</div>";
 
       $(".containPayed").html(containPay);
       $(".Payed__col2--Row1").html(title);
@@ -1214,6 +1215,7 @@ $(document).ready(function () {
 
       AmounctCart();
     });
+
 
     $.post("./Ajax/sendMail", { name: name, email: email });
   });
@@ -1331,7 +1333,7 @@ $(document).ready(function () {
     $.post("./TheoDoiDonHang/chiTietDonHang", { IDDH: IDDH }, function (data) {
       var arr = JSON.parse(data);
 
-      var temp = "<div class='detailBill Bill detailBill-Contain'>" + "<h2>Chi tiết đơn hàng</h2>" + "<table class='detailBill-PC'>" + "<thead>" + "<tr>" + "<th>Mã sản phẩm</th>" + "<th>Tên sản phẩm</th>" + "<th>Kích thước</th>" + "<th>Số lượng</th>" + "<th>Tổng</th>" + "<th>Phương thức thanh toán</th>" + "<th>Thao tác</th>" + "</tr>" + "</thead>" + "<tbody>";
+      var temp = "<div class='detailBill Bill detailBill-Contain'>" + "<h2>Detail Bill</h2>" + "<table class='detailBill-PC'>" + "<thead>" + "<tr>" + "<th>ID</th>" + "<th>Name</th>" + "<th>Size</th>" + "<th>Quantiti</th>" + "<th>Total</th>" + "<th>Pay Method</th>" + "<th></th>" + "</tr>" + "</thead>" + "<tbody>";
 
       arr.forEach((item) => {
         temp += "<tr>" + "<td>" + item.IDSP + "</td>" + "<td>" + item.tenSP + "</td>" + "<td>" + item.Size + "</td>" + "<td>" + item.soLuong + "</td>" + "<td>" + changedPrice(item.tongTien - 0.0) + "</td>" + "<td>" + item.cachThanhToan + "</td>";
@@ -1347,10 +1349,10 @@ $(document).ready(function () {
       temp += "</tbody>" + "</table>";
 
       arr.forEach((item) => {
-        temp += "<div class='Bill-Mobile__Item--Top DetailBill-Mobile'>" + "<p>Mã sản phẩm: <span>" + item.IDSP + "</span></p>" + "<p>Tên sản phẩm: <span>" + item.tenSP + "</span></p>" + "<p>Kích thước: <span>" + item.Size + "</span></p>" + "<p>Số lượng: <span>" + item.soLuong + "</span></p>" + "<p>Tổng tiền: <span>" + changedPrice(item.tongTien - 0.0) + "</span></p>" + "<p>Cách thức thanh toán: <span>" + item.cachThanhToan + "</span></p>";
+        temp += "<div class='Bill-Mobile__Item--Top DetailBill-Mobile'>" + "<p>ID: <span>" + item.IDSP + "</span></p>" + "<p>Name: <span>" + item.tenSP + "</span></p>" + "<p>Sizec: <span>" + item.Size + "</span></p>" + "<p>Quantiti: <span>" + item.soLuong + "</span></p>" + "<p>Total: <span>" + changedPrice(item.tongTien - 0.0) + "</span></p>" + "<p>Pay Method: <span>" + item.cachThanhToan + "</span></p>";
 
         if (item.statusDetail == 0) {
-          temp += "<td><button class='cancel-product' data-id=" + item.idDetail + " >Hủy hàng</button></td></tr>";
+          temp += "<td><button class='cancel-product' data-id=" + item.idDetail + " >Cancle</button></td></tr>";
         } else if (item.statusDetail == 1) {
           temp += "<td><button disabled class='cancel-product canceled-product'>Đã hủy</button></td></tr>";
         } else if (item.statusDetail == 2) {

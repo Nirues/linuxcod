@@ -18,7 +18,7 @@
                         "color" => $color,
                         "size" => $size, 
                         "category" => json_decode($category,true),
-                        "title" => "Khuyến mãi"
+                        "title" => "Sale"
                     ]);
                     
         }

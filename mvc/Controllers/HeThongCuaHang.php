@@ -5,7 +5,7 @@
         {
             self::view("master",[
                 "page" => "HeThongCuaHang",
-                "title" => "Hệ thống cửa hàng"
+                "title" => "Store System"
             ]);
         }
     }

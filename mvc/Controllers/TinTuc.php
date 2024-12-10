@@ -20,7 +20,7 @@
                         "newsTwo" => $newsTwo,
                         "topNews" => $topNews,
                         "sidebar" => $sidebar,
-                        "title" => "Tin tức"
+                        "title" => "News"
                     ]);
         }
     }

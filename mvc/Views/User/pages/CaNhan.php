@@ -12,14 +12,14 @@
                     <label class="Login-Label" for="Email">Name</label>
                 </div>
                 <div class="InforAccount__Gender">
-                    <label for="">Giới tính: </label>
+                    <label for="">Gender: </label>
                     <div>
                         <input type="radio" class="GenderMale" name="Gender" value="Nam"
-                            <?php if($data["Account"][0]["gioiTinh"] === "Nam") echo "checked"?>><span>Nam</span>
+                            <?php if($data["Account"][0]["gioiTinh"] === "Nam") echo "checked"?>><span>Male</span>
                     </div>
                     <div>
                         <input type="radio" class="GenderFemale" name="Gender" value="Nữ"
-                            <?php if($data["Account"][0]["gioiTinh"] === "Nữ") echo "checked"?>><span>Nữ</span>
+                            <?php if($data["Account"][0]["gioiTinh"] === "Nữ") echo "checked"?>><span>Female</span>
                     </div>
                 </div>
                 <div class="InforAccount__Date InforAccount--Item">
@@ -44,7 +44,7 @@
                 </div>
                 <div class="InforAccount__Password">
                     <fieldset>
-                        <legend>Đổi mật khẩu</legend>
+                        <legend>Change Password</legend>
                         <div class="InforAccount__Password InforAccount--Item">
                             <input type="password" class="InforAccount--Password login--Input" placeholder=" " value="">
                             <label class="Login-Label" for="">Current Password</label>
@@ -65,7 +65,7 @@
                     <label for="" class="changedEror"></label>
                 </div>
                 <div class="InforAccXác nhận munt__Save">
-                    <input type="Button" class="save__InforAccount" value="Lưu thay đổi ">
+                    <input type="Button" class="save__InforAccount" value="Save ">
                 </div>
             </div>
         </div>

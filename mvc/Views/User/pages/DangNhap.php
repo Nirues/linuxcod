@@ -1,7 +1,7 @@
 <div class="Login closeSearch">
     <div class="Login-Contain">
         <div>
-            <h1>Đăng nhập</h1>
+            <h1>Login Form</h1>
         </div>
         <div class="Login__Emails Login-Contain__Item">
             <input type="text" class="Login--Email login--Input" placeholder=" ">
@@ -18,11 +18,11 @@
                     Service</a> apply.</p>
         </div>
         <div>
-            <input type="Button" class="LoginSubmit" value="Đăng nhập">
+            <input type="Button" class="LoginSubmit" value="Login">
         </div>
         <div class="User__Account">
-            <p>Quên mật khẩu? <a href="KhoiPhucMatKhau">Khôi phục mật khẩu</a></p>
-            <p>Khách hàng mới? <a href="DangKy">Tạo tài khoản của bạn</a></p>
+        <p>Forgot your password? <a href="KhoiPhucMatKhau">Recover password</a></p>
+        <p>New customer? <a href="DangKy">Create your account</a></p>
         </div>
     </div>
 </div>

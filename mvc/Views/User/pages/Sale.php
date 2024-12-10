@@ -22,12 +22,12 @@
             <div class="MainProduct__Menu">
                 <div class="MainProduct__pacePrice MainProduct__Menu--Border">
                     <ul>
-                        <h3>Khoảng giá</h3>
+                        <h3>Price Range</h3>
                         <div class="spacePrice">
                             <div class="sliderPrice"></div>
                             <div>
                                 <input type="hidden" class="minimum__Price" value="0">
-                                <input type="hidden" class="maximum__Price" name="" value="1000000">
+                                <input type="hidden" class="maximum__Price" name="" value="100000000">
                                 <p class="price__show"></p>
                                 <div id="priceRange"></div>
                             </div>
@@ -37,7 +37,7 @@
 
                 <div class="MainProduct__Item MainProduct__Menu--Border">
                     <ul>
-                        <h3>Danh mục sản phẩm</h3>
+                        <h3>Product Catalog</h3>
                         <div>
                             <?php
                                 $i = 0;
@@ -56,7 +56,7 @@
 
                 <div class="MainProduct__Brand MainProduct__Menu--Border">
                     <ul>
-                        <h3>Thương hiệu</h3>
+                        <h3>Brand</h3>
                         <div class="MainProduct__Brand--Contain">
                             <?php
                                     while($rows = mysqli_fetch_assoc($data["brand"]))
@@ -70,7 +70,7 @@
                 </div>
                 <div class="MainProduct__Produce MainProduct__Menu--Border">
                     <ul>
-                        <h3>Xuất xứ</h3>
+                        <h3>Origin</h3>
                         <div class="MainProduct--Flex">
                             <?php
                                     while($rows = mysqli_fetch_assoc($data["origin"]))
@@ -83,7 +83,7 @@
                 </div>
                 <div class="MainProduct__Size MainProduct__Menu--Border">
                     <ul>
-                        <h3>Kích thước</h3>
+                        <h3>Size</h3>
                         <div class="MainProduct--Flex">
                             <?php
                                     while($rows = mysqli_fetch_assoc($data["size"]))
@@ -96,7 +96,7 @@
                 </div>
                 <div class="MainProduct__Color MainProduct__Menu--Border">
                     <ul>
-                        <h3>Màu sắc</h3>
+                        <h3>Color</h3>
                         <div class="MainProduct--Flex">
                             <?php
                                     while($rows = mysqli_fetch_assoc($data["color"]))
@@ -113,11 +113,11 @@
                 <div class="MainProduct__Task">
                     <div class="MainProduct__Task--section">
                         <select class="MainProduct__select">
-                            <option value="All">Tất cả</option>
-                            <option value="ASCZ">Từ A-Z</option>
-                            <option value="DESCA">Từ Z-A</option>
-                            <option value="ASC">Giá từ thấp đến cao</option>
-                            <option value="DESC">Giá từ cao đến thấp</option>
+                            <option value="All">All</option>
+                            <option value="ASCZ"> A-Z</option>
+                            <option value="DESCA"> Z-A</option>
+                            <option value="ASC">Price from low to high</option>
+                            <option value="DESC">Price from high to low</option>
                         </select>
                     </div>
                 </div>

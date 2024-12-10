@@ -5,41 +5,41 @@
             <div class="MainProduct__Menu">
                 <div class="MainProduct__Item MainProduct__Menu--Border">
                     <ul>
-                        <h3>Danh mục tin tức</h3>
+                        <h3>News categories</h3>
                         <div>
                             <?php foreach($data["sidebar"] as $item)
                             {?>
-                            <li><a href=""><?php echo $item["category"] == 1 ? "Chăm sóc da" : "Góc làm đẹp" ?></a></li>
+                            <li><a href=""><?php echo $item["category"] == 1 ? "Luxury Phone" : "product diversity" ?></a></li>
                             <?php } ?>
                         </div>
                     </ul>
                 </div>
                 <div class="MainProduct__pacePrice MainProduct__Menu--Border">
                     <ul>
-                        <h3>Từ khóa</h3>
+                        <h3>Key Word</h3>
                         <div class="keyWords">
                             <div>
                                 <i class="fa-solid fa-tag"></i>
-                                <a href="SanPham&page=0&IDLoai=2">Quần Áo Nam</a>
+                                <a href="SanPham&page=0&IDLoai=2">Phone</a>
                             </div>
                             <div>
                                 <i class="fa-solid fa-tag"></i>
-                                <a href="SanPham&page=0&IDLoai=3">Quần Áo Nữ</a>
+                                <a href="SanPham&page=0&IDLoai=3">laptop</a>
                             </div>
                             <div>
                                 <i class="fa-solid fa-tag"></i>
-                                <a href="SanPham&page=0&IDLoai=7">JumSuit</a>
+                                <a href="SanPham&page=0&IDLoai=7">Electronics</a>
                             </div>
                             <div>
                                 <i class="fa-solid fa-tag"></i>
-                                <a href="SanPham&page=0&IDLoai=1">Phụ Kiện</a>
+                                <a href="SanPham&page=0&IDLoai=1">Accessory</a>
                             </div>
                         </div>
                     </ul>
                 </div>
                 <div class="MainProduct__Brand MainProduct__Menu--Border">
                     <ul>
-                        <h3>Bài viết nôi bật</h3>
+                        <h3>"Featured Articles"</h3>
                         <div>
                             <?php foreach($data["topNews"] as $item)
                             {?>
@@ -59,56 +59,13 @@
                         </div>
                     </ul>
                 </div>
-                <div class="MainProduct__pacePrice MainProduct__Menu--Border">
-                    <ul>
-                        <h3>Từ khóa</h3>
-                        <div>
-                            <?php
-                                    $i = 0;
-
-                                    while($i < 4)
-                                    {
-                                        $row = mysqli_fetch_array($data["productHot"]);
-                                        if($row == null)
-                                        {
-                                            break;
-                                        }
-                                        $reduce = $row["giaSP"] * ($row["giaGiam"] / 100);
-                                        $total = $row["giaSP"] - $reduce;
-                                        $i++;
-                                    ?>
-                            <div class="newsProductHot newsHot">
-                                <div class="newsProductHot__Img">
-                                    <a href=""><img src="<?php echo $row["image"] ?>" alt=""></a>
-                                </div>
-                                <div class="newsHot__Content">
-                                    <a
-                                        href="<?php echo 'ChiTietSanPham&IDLoai='.$row["IDLoai"].'&ID='.$row["ID"].''?>">
-                                        <?php echo strtoupper($row["tenSP"]) ?></a>
-                                    <div class="product__Total newsHot__Total">
-                                        <div class="reduce__Price"><?php echo number_format($total, 0, ',', '.');?><span
-                                                class="total">đ</span></div>
-                                        <?php
-                                                        if($row["giaGiam"] > 0)
-                                                        {?>
-                                        <div class="original__price newsHot__price">
-                                            <?php if($row["giaGiam"] >0) {echo number_format($row['giaSP'], 0, ',', '.');}?><span
-                                                class="total">đ</span></div>
-                                        <?php } ?>
-                                    </div>
-                                </div>
-                            </div>
-                            <?php }
-                                ?>
-                        </div>
-                    </ul>
-                </div>
+               
             </div>
             <div class="newsContain">
                 <div class="newsContain__Body">
                     <div class="TitleItem">
                         <b></b>
-                        <span>Chăm sóc Cơ Thể</span>
+                        <span>Stay Ahead of Trends</span>
                         <b></b>
                     </div>
 
@@ -136,7 +93,7 @@
                 <div class="newsContain__Makup">
                     <div class="TitleItem">
                         <b></b>
-                        <span>Mua Hàng Và Giao Hàng Nhanh Chóng</span>
+                        <span>"Fast Shopping and Delivery"</span>
                         <b></b>
                     </div>
 

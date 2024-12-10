@@ -17,7 +17,7 @@
                         "color" => $color,
                         "size" => $size, 
                         "category" => json_decode($category,true),
-                        "title" => "Tất cả sản phẩm"
+                        "title" => "All Product"
                     ]);           
         }
 

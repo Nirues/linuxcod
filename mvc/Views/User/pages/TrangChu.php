@@ -49,7 +49,7 @@
         <div class="section__2__Brand">
             <div class="section__2__Brand__Name Title__All">
                 <div class="Title__Name">
-                    <span>Thời Trang</span>
+                    <span></span>
                     <h2>BRAND</h2>
                 </div>
             </div>
@@ -239,8 +239,8 @@
         <div class="section__5__Contain">
             <div class="Title__All Title__All--title">
                 <div class="Title__Name">
-                    <span>Khuyến mãi</span>
-                    <h2>FLASH SALE</h2>
+                    <span>Flash Sale</span>
+                    <h2></h2>
                 </div>
             </div>
 
@@ -369,7 +369,7 @@
         <div class="section__8__News">
             <div class="Title__All Title__All--title">
                 <div class="Title__Name">
-                    <span>Hữu ích</span>
+                   
                     <h2>BLOG TIPS & HINT</h2>
                 </div>
             </div>
@@ -402,8 +402,8 @@
         <div class="section__11__AboutUs">
             <div class="Title__All Title__All--title">
                 <div class="Title__Name">
-                    <span>Về Chúng Tôi</span>
-                    <h2>VIETSTALL</h2>
+                    <span>About</span>
+                    <h2>Ecenler</h2>
                 </div>
             </div>
 
@@ -416,7 +416,7 @@
                         <img src="https://bizweb.dktcdn.net/100/302/551/themes/758295/assets/testimonial1.jpg?1699007615400"
                             alt="">
                         <div class="About_item-title">
-                            <h4>Đạt 100.000+ khách hàng</h4>
+                            <h4>Reach 100,000+ customers</h4>
                         </div>
                     </div>
 
@@ -427,7 +427,7 @@
                         <img src="https://bizweb.dktcdn.net/100/302/551/themes/758295/assets/testimonial3.jpg?1699007615400"
                             alt="">
                         <div class="About_item-title">
-                            <h4>10 năm hoạt động</h4>
+                            <h4>10 years of operation</h4>
                         </div>
                     </div>
 
@@ -438,7 +438,7 @@
                         <img src="https://bizweb.dktcdn.net/100/302/551/themes/758295/assets/testimonial2.jpg?1699007615400"
                             alt="">
                         <div class="About_item-title">
-                            <h4>15 Cửa hàng toàn quốc</h4>
+                            <h4>15 Stores Nationwide</h4>
                         </div>
                     </div>
 
@@ -512,8 +512,8 @@
                     <i class="fa-solid fa-truck-moving"></i>
                 </div>
                 <div class="Support__Content">
-                    <h3>MIỄN PHÍ VẬN CHUYỂN</h3>
-                    <p>Nhận hàng trong vòng 3 ngày</p>
+                    <h3>FREE SHIPPING</h3>
+                    <p>Receive within 3 days</p>
                 </div>
             </div>
 
@@ -522,8 +522,8 @@
                     <i class="fa-solid fa-trophy"></i>
                 </div>
                 <div class="Support__Content">
-                    <h3>CHẤT LƯỢNG ĐẢM BẢO</h3>
-                    <p>Top 10 thương hiệu uy tín 2017</p>
+                    <h3>QUALITY GUARANTEED</h3>
+                    <p>Top 10 prestigious brands 2024</p>
                 </div>
             </div>
 
@@ -532,8 +532,8 @@
                     <i class="fa-solid fa-headphones-simple"></i>
                 </div>
                 <div class="Support__Content">
-                    <h3>HỖ TRỢ 24/7</h3>
-                    <p>Gọi điện - Zalo - iMessage - SMS</p>
+                    <h3>SUPPORT 24/7</h3>
+                    <p>Calling - Zalo - iMessage - SMS</p>
                 </div>
             </div>
 
@@ -542,8 +542,8 @@
                     <i class="fa-solid fa-rotate-left"></i>
                 </div>
                 <div class="Support__Content">
-                    <h3>ĐỔI TRẢ DỄ DÀNG</h3>
-                    <p>Trả lại hàng nếu không ưng ý</p>
+                    <h3> EASY RETURN</h3>
+                    <p>Return if not satisfied</p>
                 </div>
             </div>
         </div>

@@ -5,7 +5,7 @@
         protected $severName = "localhost";
         protected $userName = "root";
         protected $passWord = "";
-        protected $dbName = "thoitrang2";
+        protected $dbName = "dt";
 
         function __construct()
         {

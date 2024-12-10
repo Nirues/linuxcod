@@ -22,14 +22,14 @@
         <section class="MainProduct">
             <div class="MainProduct__Menu">
                 <div class="MainProduct__Menu--close">
-                    <p>Lọc sản phẩm</p>
+                    <p>Filter products</p>
                     <i class="fa-solid fa-xmark  MainProduct-Menu__Mobile--Close"></i>
                 </div>
                 <div class="MainProduct__pacePrice MainProduct__Menu--Border">
                     <ul>
-                        <h3>Khoảng giá</h3>
+                        <h3>Price range</h3>
                         <input type="hidden" class="minimum__Price" value="0">
-                        <input type="hidden" class="maximum__Price" name="" value="1000000">
+                        <input type="hidden" class="maximum__Price" name="" value="100000000">
                         <div class="spacePrice">
                             <div class="sliderPrice"></div>
                             <div>
@@ -39,19 +39,19 @@
                         </div>
                         <div class="spacePrice-Mobile">
                             <label for="rdSpacePrice"><input id="rdSpacePrice" type="radio" class="rdSpacePrice"
-                                    name="rdSpacePrice" data-min="0" data-max="150000" value=""> Dưới 150.000
+                                    name="rdSpacePrice" data-min="0" data-max="150000" value=""> Under 15.000.000
                                 <u>đ</u></label>
                             <label for="rdSpacePrice1"><input id="rdSpacePrice1" type="radio" class="rdSpacePrice"
-                                    name="rdSpacePrice" data-min="150000" data-max="250000" value=""> Từ 150.000
+                                    name="rdSpacePrice" data-min="150000" data-max="250000" value=""> From 1.500.000
                                 <u>đ</u> - 250.000 <u>đ</u></label>
                             <label for="rdSpacePrice2"><input id="rdSpacePrice2" type="radio" class="rdSpacePrice"
-                                    name="rdSpacePrice" data-min="250000" data-max="350000" value=""> Từ 250.000
+                                    name="rdSpacePrice" data-min="250000" data-max="350000" value=""> From 250.000
                                 <u>đ</u> - 350.000 <u>đ</u></label>
                             <label for="rdSpacePrice3"><input id="rdSpacePrice3" type="radio" class="rdSpacePrice"
-                                    name="rdSpacePrice" data-min="350000" data-max="500000" value=""> Từ 350.000
+                                    name="rdSpacePrice" data-min="350000" data-max="500000" value=""> From 350.000
                                 <u>đ</u> - 500.000 <u>đ</u></label>
                             <label for="rdSpacePrice4"><input id="rdSpacePrice4" type="radio" class="rdSpacePrice"
-                                    name="rdSpacePrice" data-min="500000" data-max="999999999" value=""> Trên 500.000
+                                    name="rdSpacePrice" data-min="500000" data-max="999999999" value=""> Above 500.000
                                 <u>đ</u></label>
                         </div>
                     </ul>
@@ -59,7 +59,7 @@
 
                 <div class="MainProduct__Item MainProduct__Menu--Border">
                     <ul>
-                        <h3>Danh mục sản phẩm</h3>
+                        <h3>Product Catalog</h3>
                         <div class="taskBar--Categories">
                             <?php
                                 $i = 0;
@@ -78,7 +78,7 @@
 
                 <div class="MainProduct__Brand MainProduct__Menu--Border">
                     <ul>
-                        <h3>Thương hiệu</h3>
+                        <h3>Brand</h3>
                         <div class="MainProduct__Brand--Contain">
                             <?php
                                 $i = 0;
@@ -96,7 +96,7 @@
                 </div>
                 <div class="MainProduct__Produce MainProduct__Menu--Border">
                     <ul>
-                        <h3>Xuất xứ</h3>
+                        <h3>Origin</h3>
                         <div class="MainProduct--Flex">
                             <?php
                                 $i = 0;
@@ -114,7 +114,7 @@
                 </div>
                 <div class="MainProduct__Size MainProduct__Menu--Border">
                     <ul>
-                        <h3>Kích thước</h3>
+                        <h3>Size</h3>
                         <div class="MainProduct--Flex">
                             <?php
                                 $i = 0;
@@ -132,7 +132,7 @@
                 </div>
                 <div class="MainProduct__Color MainProduct__Menu--Border">
                     <ul>
-                        <h3>Màu sắc</h3>
+                        <h3>Color</h3>
                         <div class="MainProduct--Flex">
                             <?php
                                 $i = 0;
@@ -154,15 +154,15 @@
                 <div class="MainProduct__Task">
                     <div class="MainProduct__Task--section">
                         <select class="MainProduct__select">
-                            <option value="All">Tất cả</option>
-                            <option value="ASCZ">Từ A-Z</option>
-                            <option value="DESCA">Từ Z-A</option>
-                            <option value="ASC">Giá từ thấp đến cao</option>
-                            <option value="DESC">Giá từ cao đến thấp</option>
+                            <option value="All">All</option>
+                            <option value="ASCZ"> A-Z</option>
+                            <option value="DESCA"> Z-A</option>
+                            <option value="ASC">Price from low to high</option>
+                            <option value="DESC">Price from high to low</option>
                         </select>
                     </div>
                     <div class="MainProduct-Menu__Mobile">
-                        <label for="">Bộ lọc</label>
+                        <label for="">Filter</label>
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </div>
 

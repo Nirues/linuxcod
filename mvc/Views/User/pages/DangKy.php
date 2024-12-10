@@ -1,7 +1,7 @@
     <div class="Login Reigster closeSearch">
         <div class="Login__Contain Reigster__Contain">
             <div class="Reigster--Title">
-                <h1>Tạo tài khoản</h1>
+                <h1>Create Account</h1>
             </div>
             <div class="Reigster--Email Login-Contain__Item">
                 <input type="text" class="Login--PassWord login--Input Reigster__Email" placeholder=" ">
@@ -25,9 +25,9 @@
                 <label class="Login-Label" for="">Address</label>
             </div>
             <div class="Reigster--Gender">
-                <label for="">Giới tính: </label>
-                <input type="radio" class="GenderMale" name="Gender" value="Nam" checked="true">Nam
-                <input type="radio" class="GenderFemale" name="Gender" value="Nữ">Nữ
+                <label for="">Gender: </label>
+                <input type="radio" class="GenderMale" name="Gender" value="Nam" checked="true">Male
+                <input type="radio" class="GenderFemale" name="Gender" value="Nữ">Female
             </div>
             <div class="Login__rulesService">
                 <p class="Reigster__Error"></p>
@@ -36,10 +36,10 @@
                         Service</a> apply.</p>
             </div>
             <div>
-                <input type="Button" class="LoginSubmit ReigsterSubmit" value="Đăng Ký">
+                <input type="Button" class="LoginSubmit ReigsterSubmit" value="Register">
             </div>
             <div class="User__Account">
-                <a href="DangNhap"><i class="fa-solid fa-arrow-left-long"></i>Quay lại đăng nhập</a>
+                <a href="DangNhap"><i class="fa-solid fa-arrow-left-long"></i>Return Page Login</a>
             </div>
         </div>
     </div>

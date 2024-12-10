@@ -34,14 +34,13 @@
                                         <img class="Avatar" src="<?php echo $_SESSION["logined"][0]["image"] ?>" alt="">
                                     </div>
                                     <div class="Logined__Menu--Pagination">
-                                        <input type="Button" class="Logined__Menu--Control Logined__Menu--Information" name="" value="Thông tin">
-                                        <input type="Button" class="Logined__Menu--Control Logined__Menu--Logout" name="" value="Đăng xuất">
+                                        <input type="Button" class="Logined__Menu--Control Logined__Menu--Information" name="" value="Information">
+                                        <input type="Button" class="Logined__Menu--Control Logined__Menu--Logout" name="" value="Logout">
                                     </div>
                                     <div class="Logined__Menu--SelectPage">
                                         <ul>
-                                            <li><a href="TheoDoiDonHang" class="menuFollowBill">Theo
-                                                    dõi đơn hàng</a></li>
-                                            <li><a href="DanhSachYeuThich" class="menuFavourite">Danh sách yêu thích</a>
+                                            <li><a href="TheoDoiDonHang" class="menuFollowBill">Order Tracking</a></li>
+                                            <li><a href="DanhSachYeuThich" class="menuFavourite">Whislist</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -73,7 +72,7 @@
                         <p class="AmountCart"></p>
                         <div class="cart__Contain">
                             <div class="cart__Contain--RowTop">
-                                <p>GIỎ HÀNG</p>
+                                <p>Cart</p>
                             </div>
 
                             <div class="cart__Contain--Middle">
@@ -82,7 +81,7 @@
 
                             <div class="cart__Contain--Bottom">
                                 <div class="miniCart__Price">
-                                    <span>Tổng tiền: </span>
+                                    <span>Total: </span>
                                     <span class="miniCart__Price--Total"></span>
                                 </div>
                                 <div class="miniCart__Control">
@@ -103,54 +102,38 @@
             <div class="Header__Bottom__Right Header--Wrap">
                 <div class="Header__Bottom__Right__Nav">
                     <ul class="Header__Bottom__Right__Contain Header--Wrap">
-                        <li><a href="TrangChu" >Trang Chủ</a></li>
-                        <li class="Header__Product"><a href="SanPham">Sản Phẩm</a>
+                        <li><a href="TrangChu" >Home</a></li>
+                        <li class="Header__Product"><a href="SanPham">Product</a>
                             <div class="Categories">
                                 <ul class="Categories__Contain">
-                                    <a href="SanPham&page=0&IDLoai=1">Quần Áo Nam</a>
+                                    <a href="#">Phone</a>
                                     <div class="Categories-Mask">
 
                                     </div>
                                 </ul>
                                 <ul class="Categories__Contain">
-                                    <a href="SanPham&page=0&IDLoai=2">Quần Áo Nữ</a>
+                                    <a href="#">Laptop</a>
                                     <div class="Categories-CleanSkin">
 
                                     </div>
                                 </ul>
                                 <ul class="Categories__Contain">
-                                    <a href="SanPham&page=0&IDLoai=3">Đầm & Jumsuit</a>
+                                    <a href="#">Electronics</a>
                                     <div class="Categories-SkinCare">
 
                                     </div>
                                 </ul>
                                 <ul class="Categories__Contain">
-                                    <a href="SanPham&page=0&IDLoai=7">Phụ Kiện</a>
+                                    <a href="SanPham&page=0&IDLoai=7">Accessory</a>
                                     <div class="Categories-MakeUp">
 
                                     </div>
                                 </ul>
                             </div>
                         </li>
-                        <li><a class="SaleProduct" href="Sale">Khuyến Mãi</a></li>
-                        <li><a href="TinTuc">Tin Tức</a></li>
-                       
-                        <li class="nav-information"><a href="">Thông Tin</a>
-                            <div class="information">
-                                <ul>
-                                 <li><a href="BaoHanh">Bảo Hành & Bảo Quản</a>
-                                    </li>
-                                    <li><a href="GiaoHang">Giao Hàng & Đổi Hàng</a>
-                                    </li>
-                                    <li><a href="Hinhthucthanhtoan">Hình Thức Thanh Toán</a>
-                                    </li>
-                                    <li><a href="vip">Điều Kiện Vip</a></li>
-                                </ul>
-
-
-                            </div>
-                        </li>
-                        <li><a href="HeThongCuaHang">Hệ Thống Cửa Hàng</a></li>
+                        <li><a class="SaleProduct" href="Sale">Sale</a></li>
+                        <li><a href="TinTuc">New</a></li>
+                        <li><a href="HeThongCuaHang">Store System</a></li>
                     </ul>
                 </div>
 
@@ -171,12 +154,12 @@
                         </a>
                         <i class="fa-solid fa-xmark close-MenuMobile"></i>
                     </li>
-                    <li><a href="TrangChu">Trang Chủ</a></li>
-                    <li class="Header__Product"><a href="SanPham">Sản Phẩm</a><i class="fa-solid fa-plus more-Categories"></i><i class="fa-solid fa-minus less-Categories"></i>
+                    <li><a href="TrangChu">Home</a></li>
+                    <li class="Header__Product"><a href="SanPham">Product</a><i class="fa-solid fa-plus more-Categories"></i><i class="fa-solid fa-minus less-Categories"></i>
                         <div class="Categories">
                             <ul class="Categories__Contain">
                                 <div class="Categories__Contain-Content">
-                                    <a href="SanPham&page=0&IDLoai=1">Mặt Nạ</a>
+                                    <a href="SanPham&page=0&IDLoai=1">Phone</a>
                                     <i class="fa-solid fa-plus more-Face"></i><i class="fa-solid fa-minus less-Face"></i>
                                 </div>
 
@@ -186,7 +169,7 @@
                             </ul>
                             <ul class="Categories__Contain">
                                 <div class="Categories__Contain-Content">
-                                    <a href="SanPham&page=0&IDLoai=2">Làm Sạch Da</a>
+                                    <a href="SanPham&page=0&IDLoai=2">LapTop</a>
                                     <i class="fa-solid fa-plus more-cleanLeather"></i><i class="fa-solid fa-minus less-cleanLeather"></i>
                                 </div>
                                 <div class="Categories-CleanSkin__Mobile Categories--Hidden Categories--Show__cleanLeather">
@@ -195,7 +178,7 @@
                             </ul>
                             <ul class="Categories__Contain">
                                 <div class="Categories__Contain-Content">
-                                    <a href="SanPham&page=0&IDLoai=3">Dưỡng Da</a>
+                                    <a href="SanPham&page=0&IDLoai=3">Electronics</a>
                                     <i class="fa-solid fa-plus more-skinLeather"></i><i class="fa-solid fa-minus less-skinLeather"></i>
                                 </div>
                                 <div class="Categories-SkinCare__Mobile Categories--Hidden Categories--Show__skinLeather">
@@ -204,7 +187,7 @@
                             </ul>
                             <ul class="Categories__Contain">
                                 <div class="Categories__Contain-Content">
-                                    <a href="SanPham&page=0&IDLoai=7">Trang Điểm</a>
+                                    <a href="SanPham&page=0&IDLoai=7">Accessory</a>
                                     <i class="fa-solid fa-plus more-skinCare"></i><i class="fa-solid fa-minus less-skinCare"></i>
                                 </div>
                                 <div class="Categories-MakeUp__Mobile Categories--Hidden Categories--Show__skinCare">
@@ -213,23 +196,23 @@
                             </ul>
                         </div>
                     </li>
-                    <li><a class="SaleProduct" href="Sale">Khuyến Mãi</a></li>
-                    <li><a href="TinTuc">Tin Tức</a></li>
-                    <li><a href="LienHe">Liên Hệ</a></li>
+                    <li><a class="SaleProduct" href="Sale">Sale</a></li>
+                    <li><a href="TinTuc">News</a></li>
+                    <li><a href="LienHe">Contact</a></li>
                    
                     <?php
                     if (isset($_SESSION["logined"])) { ?>
-                        <li><a class="Logined__Menu--Logout">Đăng xuất</a></li>
+                        <li><a class="Logined__Menu--Logout">Logout</a></li>
                     <?php } else { ?>
-                        <li><a href="DangNhap">Đăng nhập</a></li>
-                        <li><a href="DangKy">Đăng ký</a></li>
+                        <li><a href="DangNhap">Login</a></li>
+                        <li><a href="DangKy">Register</a></li>
                     <?php } ?>
                 </ul>
             </div>
         </div>
 
         <div class="Header-Mobile__Top">
-            <p>Miễn phí free ship với đơn hàng trên 1.000.000đ</p>
+            <p>Free shipping for orders over 1,000,000 VND</p>
         </div>
 
         <div class="Header-Mobile__Bottom">

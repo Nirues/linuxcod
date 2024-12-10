@@ -1,4 +1,3 @@
-
 <footer class="Footer">
 
   <style>
@@ -11,14 +10,14 @@
     <div class="Footer__Contain" style="margin-top: 50px;">
         
         <ul>
-            <h4>Thông tin liên hệ</h4>
+            <h4>Contact Information</h4>
             <li>
-                <p class=""><i class="fa-solid fa-location-dot"></i>Đà Nẵng,Việt Nam</p>
+                <p class=""><i class="fa-solid fa-location-dot"></i>Da Nang, Vietnam</p>
             </li>
         </ul>
 
         <ul>
-            <h4>Hổ trợ</h4>
+            <h4>Support</h4>
             <li>
                 <i class="fa-solid fa-phone"></i>
                 <span>097686609</span>
@@ -29,57 +28,57 @@
             </li>
             <li>
                 <i class="fa-solid fa-envelope"></i>
-                <span>lily@gmail.com</span>
+                <span>nguyenquoc@gmail.com</span>
             </li>
             <li>
                 <i class="fa-solid fa-clock"></i>
-                <span>T2 - T6 ( 9h -> 17h30 )</span>
+                <span>Mon - Fri ( 9 AM -> 5:30 PM )</span>
             </li>
         </ul>
 
         <ul>
-            <h4>Dịch vụ khách hàng</h4>
+            <h4>Customer Services</h4>
             <li>
-                <a href="">Tìm kiếm</a>
+                <a href="">Search</a>
             </li>
             <li>
-                <a href="">Chính sách đổi trả</a>
+                <a href="">Return Policy</a>
             </li>
             <li>
-                <a href="">Chính sách bảo mật</a>
+                <a href="">Privacy Policy</a>
             </li>
             <li>
-                <a href="">Điều khoản dịch vụ</a>
-            </li>
-        </ul>
-
-        <ul>
-            <h4>Về chúng tôi</h4>
-            <li>
-                <a href="">Tin mới</a>
-            </li>
-            <li>
-                <a href="">Khuyến mại mới nhất tại cửa hàng</a>
-            </li>
-            <li>
-                <a href="">Địa điểm cửa hàng VieST Clothes</a>
-            </li>
-            <li>
-                <a href="">Câu lạc bộ thời trang</a>
+                <a href="">Terms of Service</a>
             </li>
         </ul>
 
         <ul>
-            <h4>ĐĂNG KÝ BẢN TIN</h4>
+            <h4>About Us</h4>
+            <li>
+                <a href="">News</a>
+            </li>
+            <li>
+                <a href="">Latest Promotions at the Store</a>
+            </li>
+            <li>
+                <a href="">Ecenler Clothes Store Locations</a>
+            </li>
+            <li>
+                <a href="">Fashion Club</a>
+            </li>
+        </ul>
+
+        <ul>
+            <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
             <li>
                 <p>
-                    Hãy nhập địa chỉ email của bạn vào ô dưới đây để có thể nhận được tất cả các tin tức mới nhất của Suplo về các sản phẩm mới, các chương trình khuyến mãi mới. Suplo xin đảm bảo sẽ không gửi mail rác, mail spam tới bạn.
+                    Please enter your email address in the box below to receive all the latest news from Suplo about new products and promotions. Suplo ensures not to send junk or spam emails to you.
                 </p>
             </li>
             <li>
                 <form method="POST" action="" class="form__Footer">
-                    <input type="text" class="Email__Footer" placeholder="Nhập email của bạn">
-                    <input type="submit" class="submit__Footer" value="Đăng ký">
+                    <input type="text" class="Email__Footer" placeholder="Enter your email">
+                    <input type="submit" class="submit__Footer" value="Subscribe">
                 </form>
 
             </li>
@@ -87,7 +86,7 @@
                 <div class="Icon__Footer">
                 <ul  class="wrapper">
     
-    <a href="https://www.facebook.com/profile.php?id=100050261354686&mibextid=ZbWKwL">
+    <a href="https://www.facebook.com/profile.php?id=100033495308738">
         <li class="icon facebook">
             <span  class="tooltip" >Facebook</span>
             <span href="" ><i  class="fab fa-facebook"></i></span>

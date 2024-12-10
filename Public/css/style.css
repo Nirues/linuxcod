@@ -796,6 +796,8 @@ li {
   display: flex;
   justify-content: left;
   transition: transform 0.3s linear;
+  flex: 1 1  calc(10% - 15px);
+  max-width: calc(10% - 15px);
 }
 
 .section__5__Items {
@@ -2682,6 +2684,7 @@ span {
 }
 
 .miniCart {
+  display: none;
   position: absolute;
   display: grid;
   grid-template-rows: 50px 320px 364px;

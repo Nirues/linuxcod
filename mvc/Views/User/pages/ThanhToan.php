@@ -19,37 +19,37 @@
 
             <div class="tablePay__Row2">
                 <div class="Row2__Column1">
-                    <h3>THANH TOÁN VÀ GIAO HÀNG</h3>
+                    <h3>PAYMENT AND DELIVERY</h3>
                     <div>
-                        <label for="">Họ tên <span>*</span></label>
-                        <input type="text" class="nameCustomer" placeholder="Họ tên của bạn"
+                        <label for="">Full name<span>*</span></label>
+                        <input type="text" class="nameCustomer" placeholder="Full Name"
                             value="<?php if(isset($_SESSION["hoTen"])) echo $_SESSION["hoTen"]; else echo ''?>">
                     </div>
                     <div>
-                        <label for="">Địa chỉ <span>*</label>
-                        <input type="text" class="addressCustomer" placeholder="Địa chỉ giao hàng"
+                        <label for="">Address<span>*</label>
+                        <input type="text" class="addressCustomer" placeholder="Address"
                             value="<?php if(isset($_SESSION["hoTen"])) echo $_SESSION["diachi"]; else echo ''?>">
                     </div>
                     <div>
-                        <label for="">Số điện thoại <span>*</label>
-                        <input type="text" class="phoneCustomer" placeholder="Số điện thoại liên hệ"
+                        <label for="">Phone Number<span>*</label>
+                        <input type="text" class="phoneCustomer" placeholder="Contact Number"
                             value="<?php if(isset($_SESSION["hoTen"])) echo $_SESSION["sdt"]; else echo ''?>">
                     </div>
                     <div>
-                        <label for="">Địa chỉ email <span>*</label>
-                        <input type="text" class="emailCustomer" placeholder="Email liên hệ"
+                        <label for="">Email Address <span>*</label>
+                        <input type="text" class="emailCustomer" placeholder="Email Address"
                             value="<?php if(isset($_SESSION["hoTen"])) echo $_SESSION["email"];else echo ''?>">
                     </div>
                     <div>
-                        <label for="">Ghi chú (tùy chọn) <span>*</span></label>
-                        <textarea class="noteCustomer" placeholder="Lưu ý khi giao hàng"></textarea>
+                        <label for="">Notes (optional) <span>*</span></label>
+                        <textarea class="noteCustomer" placeholder="Note delivering"></textarea>
                     </div>
                 </div>
                 <div class="Row2__Column2">
                     <div class="Row2__Column2--Contain">
-                        <h3>ĐƠN HÀNG CỦA BẠN</h3>
+                        <h3>YOUR ORDER</h3>
                         <div class="Row2__Column2--Row1">
-                            <p class="Row2__Column2--total">SẢN PHẨM<span>TỔNG</span></p>
+                            <p class="Row2__Column2--total">PRODUCT<span>TOTAL</span></p>
                             <div class="Column2__Row1--Contain">
 
                             </div>
@@ -63,23 +63,23 @@
 
                                 <input type="radio" class="rdPaymentMethod payPalBank" id="paypal--atm" checked="true"
                                     name="rdPaymentMethod" value="1"></input>
-                                    <label for="paypal--atm">Chuyển khoản ngân hàng</label>
+                                    <label for="paypal--atm">Bank transfer</label>
                                     </div>
 
                                 <div class="Row2__Column2--Noted Noted__1">
                                     <p>
-                                        Bạn vui lòng chờ xác nhận đơn hàng qua email từ nhân viên Inbox/Order <br>
-                                        sau khi kiểm tra tình trạng còn hàng tại kho. Vui lòng <b>KHÔNG</b> chuyển
-                                        <br>
-                                        khoản trước khi nhận được xác nhận từ Nuty. Xin cảm ơn
+                                    Please wait for order confirmation via email from Inbox/Order staff <br>
+after checking the stock status at the warehouse. Please <b>DO NOT</b> transfer
+
+<br>
+money before receiving confirmation from Nuty. Thank you
                                     </p>
                                 </div>
                             </div>
                             <div>
                                 <div class="paypal--contain">
                                 <input type="radio" class="rdPaymentMethod" id="paypal--money" name="rdPaymentMethod" value="2"></input>
-                                <label for="paypal--money">Trả
-                                    tiền mặt khi nhận hàng (COD)</label>
+                                <label for="paypal--money">Cash on Delivery (COD)</label>
                                 </div>
                                 <div class="Row2__Column2--Noted Noted__2">
 

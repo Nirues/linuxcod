@@ -130,10 +130,10 @@ $(document).ready(function(){
       //update categories
       $('.category-edit').click(function(){
           let result = `<select class="form-select selectCategory" name="selectCategory" aria-label="Default select example">"
-          "<option class='optionCategory' value="0">Quần Áo Nam</option>"
-          "<option class='optionCategory' value="1">Quần Áo Nữ</option>"
-          "<option class='optionCategory' value="2">Váy&Jumsuit</option>"
-          "<option class='optionCategory' value="3">Phụ Kiện</option>"
+          "<option class='optionCategory' value="0">Phone</option>"
+          "<option class='optionCategory' value="1">LapTop</option>"
+          "<option class='optionCategory' value="2">Electronics</option>"
+          "<option class='optionCategory' value="3">Accessory</option>"
                       "</select>`;
       
         $('.container-select').html(result);
@@ -252,11 +252,11 @@ $(document).ready(function(){
     editForm('btn-insert--category','btn-insert--brand','btn-insert--produce',"Insert Categories", "Insert");
 
     let result = `<select class="form-select selectCategory" name="selectCategory" aria-label="Default select example">"
-    "<option class='optionCategory' value="0">Quần Áo Nam</option>"
-    "<option class='optionCategory' value="1">Quần Áo Nữ</option>"
-    "<option class='optionCategory' value="2">Váy-Đầm Công Sở</option>"
-    "<option class='optionCategory' value="3">Phụ Kiện</option>"
-                "</select>`;
+     "<option class='optionCategory' value="0">Phone</option>"
+          "<option class='optionCategory' value="1">LapTop</option>"
+          "<option class='optionCategory' value="2">Electronics</option>"
+          "<option class='optionCategory' value="3">Accessory</option>"
+                      "</select>`;
     $('.container-select').html(result);
 
     $('.btn-insert--category').click(function(){

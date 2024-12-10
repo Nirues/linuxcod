@@ -5,19 +5,19 @@
             </div>
             <div class="Personally--Right">
                 <div class="Bill-Mobile">
-                    <h2>Thông tin đơn hàng</h2>
+                    <h2>Information Order</h2>
                     <?php
                             foreach($data["Bill"] as $item)
                             {?>
                     <div class="Bill-Mobile__Item">
                         <div class="Bill-Mobile__Item--Top">
-                            <p>Mã hàng: <span><?php echo $item["IDDH"] ?></span></p>
-                            <p>Ngày đặt: <span><?php echo $item["ngayDat"] ?></span></p>
-                            <p>Phí vận chuyển: <span><?php echo number_format($item["phiGD"], 0, ',', '.') ?></span></p>
-                            <p>Tổng:
+                            <p>ID: <span><?php echo $item["IDDH"] ?></span></p>
+                            <p>Date Booked: <span><?php echo $item["ngayDat"] ?></span></p>
+                            <p>Shipping Fee: <span><?php echo number_format($item["phiGD"], 0, ',', '.') ?></span></p>
+                            <p>Total:
                                 <span><?php echo number_format($item["total"] + $item["phiGD"], 0, ',', '.') ?></span>
                             </p>
-                            <p>Tình trạng: <span><?php echo $item["tinhTrang"] ?></span></p>
+                            <p>Status: <span><?php echo $item["tinhTrang"] ?></span></p>
                         </div>
                         <div class="Bill-Mobile__Item--Bottom">
                             <span data-id="<?php echo $item["IDDH"] ?>" class="watchDetailBill"><i
@@ -31,7 +31,7 @@
                             <?php }
                                 else
                                 {?>
-                            <span style="display: none"><i class="fa-solid fa-trash"></i> Xóa</span>
+                            <span style="display: none"><i class="fa-solid fa-trash"></i> Delete</span>
                             <?php }?>
                         </div>
                     </div>
@@ -41,13 +41,13 @@
                     <table>
                         <thead>
                             <tr>
-                                <th>Mã hàng</th>
-                                <th>Ngày đặt</th>
-                                <th>Tình trạng</th>
-                                <th>Phí vận chuyển</th>
-                                <th>Giảm giá</th>
-                                <th>Tổng</th>
-                                <th>Thao tác</th>
+                                <th>ID</th>
+                                <th>Date Booked</th>
+                                <th>Status</th>
+                                <th>Shipping Fee</th>
+                                <th>Discount</th>
+                                <th>Total</th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>

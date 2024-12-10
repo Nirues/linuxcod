@@ -84,27 +84,27 @@
                     </div>
                     <div class="products__insert--content">
                         <input type="text" id="products__insert--name" placeholder=" ">
-                        <label class="label--input" for="products__insert--name">Tên </label>
+                        <label class="label--input" for="products__insert--name">Name </label>
                     </div>
                     <div class="products__insert--content">
                         <input type="value" id="products__insert--description" placeholder=" ">
-                        <label class="label--input" for="products__insert--description">Mô Tả</label>
+                        <label class="label--input" for="products__insert--description">Describe</label>
                     </div>
                     <div class="products__insert--content">
                         <input type="value" id="products__insert--fromPrice" placeholder=" ">
-                        <label class="label--input" for="products__insert--fromPrice">Giá</label>
+                        <label class="label--input" for="products__insert--fromPrice">Price</label>
                     </div>
                     <div class="products__insert--content">
                         <input type="value" id="products__insert--effect" placeholder=" ">
-                        <label class="label--input" for="products__insert--effect">Giới Thiệu</label>
+                        <label class="label--input" for="products__insert--effect">Introduction</label>
                     </div>
                     <div class="products__insert--content">
                         <input type="value" id="products__insert--usage" placeholder=" ">
-                        <label class="label--input" for="products__insert--usage">Hiệu Năng</label>
+                        <label class="label--input" for="products__insert--usage">Effect</label>
                     </div>
                     <div class="products__insert--content">
                         <input type="value" id="products__insert--introduce" placeholder=" ">
-                        <label class="label--input" for="products__insert--introduce">Bảo Quản</label>
+                        <label class="label--input" for="products__insert--introduce">Preserver</label>
                     </div>
                 </div>
                 <p class='infor-error'> </p>
@@ -118,7 +118,7 @@
             <div class="customer__title">
                 <h1>Products List</h1>
                 <div class="customer__search">
-                    <input type="text" placeholder="Tìm kiếm sản phẩm..." class="customer__search--content products__search--content">
+                    <input type="text" placeholder="Search Product..." class="customer__search--content products__search--content">
                     <i class="fa-solid fa-magnifying-glass customer__search--action products__search--action"></i>
                 </div>
 

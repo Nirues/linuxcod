@@ -33,11 +33,11 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>Hình ảnh</th>
-                            <th>Sản phẩm</th>
-                            <th>Giá tiền</th>
-                            <th>Tình trạng</th>
-                            <th>Thao tác</th>
+                            <th>Image</th>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Status</th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
